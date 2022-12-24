@@ -66,7 +66,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 />
-
+            <Button
+                android:onClick="clickNum"
+                android:text="("
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/sinAction"
+                android:onClick="clickNum"
+                android:text="sin"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -104,7 +118,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 />
-
+            <Button
+                android:onClick="clickNum"
+                android:text=")"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/cosAction"
+                android:onClick="clickNum"
+                android:text="cos"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                />
         </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -143,7 +171,22 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             />
-
+        <Button
+            android:id="@+id/FactorialAction"
+            android:onClick="clickFact"
+            android:text="!"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:id="@+id/tgAction"
+            android:onClick="clickNum"
+            android:text="tg"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -182,7 +225,22 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             />
-
+        <Button
+            android:id="@+id/sqrtAction"
+            android:onClick="clickSqrt"
+            android:text="√"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:id="@+id/LogAction"
+            android:onClick="clickNum"
+            android:text="log"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -205,12 +263,19 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="OnClick" />
-
+        <Button
+            android:id="@+id/Power"
+            android:text="^"
+            android:onClick="clickNum"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            tools:ignore="OnClick" />
         <Button
             android:id="@+id/Equal"
             android:onClick="equal"
             android:text="="
-            android:layout_weight="8"
+            android:layout_weight="10"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             tools:ignore="OnClick" />

@@ -39,8 +39,16 @@ public class MainActivity extends AppCompatActivity {
     public void equal(View view) {
         //убрать курсор редактирования с толей ввода
         view.requestFocus();
+
         //взять выражение из поля ввода
-        Expression expression = new Expression(editTextExpression.getText().toString());
+        String strExpression = editTextExpression.getText().toString();
+
+        //замена процента на выражение
+        strExpression = strExpression.replace("%","/100*");
+
+
+        Expression expression = new Expression(strExpression);
+
         try {
             //посчитать выражение
             EvaluationValue result = expression.evaluate();
@@ -71,5 +79,16 @@ public class MainActivity extends AppCompatActivity {
     public void clear(View view) {
         //очистить поле для выражения
         editTextExpression.setText("");
+    }
+
+
+    public void clickSqrt(View view) {
+        editTextExpression.setText(editTextExpression.getText()
+                +"sqrt");
+    }
+
+    public void clickFact(View view) {
+        editTextExpression.setText(editTextExpression.getText()
+                +"fact");
     }
 }
